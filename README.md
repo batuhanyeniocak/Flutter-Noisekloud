@@ -61,7 +61,7 @@
 
 ```bash
 
-git  clone https://github.com/batuhanyeniocak/Q-Flutter
+git  clone https://github.com/batuhanyeniocak/Flutter-Noisekloud
 
 ```
 
@@ -71,7 +71,7 @@ git  clone https://github.com/batuhanyeniocak/Q-Flutter
 
 ```bash
 
-cd https://github.com/batuhanyeniocak/Q-Flutter
+cd https://github.com/batuhanyeniocak/Flutter-Noisekloud
 
 ```
 
@@ -81,7 +81,7 @@ cd https://github.com/batuhanyeniocak/Q-Flutter
 
 ```bash
 
-flutter  pub  get https://github.com/batuhanyeniocak/Q-Flutter
+flutter  pub  get https://github.com/batuhanyeniocak/Flutter-Noisekloud
 
 ```
 
@@ -91,7 +91,7 @@ flutter  pub  get https://github.com/batuhanyeniocak/Q-Flutter
 
 ```bash
 
-flutter  run https://github.com/batuhanyeniocak/Q-Flutter
+flutter  run https://github.com/batuhanyeniocak/Flutter-Noisekloud
 
 ```
 
@@ -145,7 +145,7 @@ MIT kapsamında lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasını
 
 ## İletişim
 
-- Proje Bağlantısı: [https://github.com/batuhanyeniocak/Q-Flutter]
+- Proje Bağlantısı: [https://github.com/batuhanyeniocak/Flutter-Noisekloud]
 
 - İstinye Üniversitesi: [https://www.istinye.edu.tr/](https://www.istinye.edu.tr/)
 
