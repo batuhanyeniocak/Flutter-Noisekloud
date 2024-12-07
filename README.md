@@ -125,9 +125,9 @@ lib/
 
 ## Ekran Görüntüleri
 
-[https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/home_Screen.png?raw=true]
-[https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/profile_Screen.png?raw=true]
-[https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/search_Screen.png?raw=true]
+![https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/home_Screen.png?raw=true]
+![https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/profile_Screen.png?raw=true]
+![https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/search_Screen.png?raw=true]
 
   
 
