@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_app/core/routes.dart';
-import 'package:flutter_app/screens/search_screen.dart';
+import 'package:go_router/go_router.dart';
 import 'search_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -20,60 +20,64 @@ class HomeScreen extends StatelessWidget {
         actions: [
           IconButton(
             icon: const Icon(CupertinoIcons.bell),
-            onPressed: () {},
+            onPressed: () {
+              context.go("/notification");
+            },
           ),
           IconButton(
             icon: const Icon(CupertinoIcons.person),
-            onPressed: () {},
+            onPressed: () {
+              context.go("/profile");
+            },
           ),
         ],
       ),
 
       // Drawer (Yan Menü)
-      drawer: Drawer(
-        child: Column(
-          children: [
-            // Drawer Header
-            Container(
-              height: 200,
-              color: Colors.blue,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Icon(
-                    CupertinoIcons.person_circle,
-                    size: 80,
-                    color: Colors.white,
-                  ),
-                  const SizedBox(height: 10),
-                  const Text(
-                    'Kullanıcı Adı',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 18,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            // Menü öğeleri
-            ListTile(
-              leading: const Icon(CupertinoIcons.home),
-              title: const Text('Ana Sayfa'),
-              onTap: () {
-                Navigator.pop(context);
-              },
-            ),
-            ListTile(
-              leading: const Icon(CupertinoIcons.settings),
-              title: const Text('Ayarlar'),
-              onTap: () {
-                Navigator.pop(context);
-              },
-            ),
-          ],
-        ),
-      ),
+      // drawer: Drawer(
+      //   child: Column(
+      //     children: [
+      //       // Drawer Header
+      //       Container(
+      //         height: 200,
+      //         color: Colors.blue,
+      //         child: Column(
+      //           mainAxisAlignment: MainAxisAlignment.center,
+      //           children: [
+      //             const Icon(
+      //               CupertinoIcons.person_circle,
+      //               size: 80,
+      //               color: Colors.white,
+      //             ),
+      //             const SizedBox(height: 10),
+      //             const Text(
+      //               'Kullanıcı Adı',
+      //               style: TextStyle(
+      //                 color: Colors.white,
+      //                 fontSize: 18,
+      //               ),
+      //             ),
+      //           ],
+      //         ),
+      //       ),
+      //       // Menü öğeleri
+      //       ListTile(
+      //         leading: const Icon(CupertinoIcons.home),
+      //         title: const Text('Ana Sayfa'),
+      //         onTap: () {
+      //           Navigator.pop(context);
+      //         },
+      //       ),
+      //       ListTile(
+      //         leading: const Icon(CupertinoIcons.settings),
+      //         title: const Text('Ayarlar'),
+      //         onTap: () {
+      //           Navigator.pop(context);
+      //         },
+      //       ),
+      //     ],
+      //   ),
+      // ),
 
       // Ana içerik
       body: Column(
@@ -446,29 +450,32 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
 
-      // Alt navigasyon çubuğu
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: const Color.fromARGB(50, 0, 0, 0),
-        selectedItemColor: const Color.fromARGB(255, 233, 86, 32),
-        unselectedItemColor: Colors.white,
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.cloud),
-            label: 'Ana Sayfa',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.search),
-            label: 'Keşfet',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.music_albums),
-            label: 'Kütüphane',
-          ),
-        ],
-        onTap: (index) {
-          // Navigasyon işlemleri buraya gelecek
-        },
+      bottomNavigationBar: Container(
+        height: 70,
+        color: Color.fromARGB(50, 0, 0, 0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            IconButton(
+                onPressed: () {
+                  context.go("/home");
+                },
+                icon: Icon(CupertinoIcons.cloud)),
+            IconButton(
+                onPressed: () {
+                  context.go("/search");
+                },
+                icon: Icon(CupertinoIcons.search)),
+            IconButton(
+                onPressed: () {
+                  context.go("/library");
+                },
+                icon: Icon(CupertinoIcons.music_albums)),
+          ],
+        ),
       ),
+
+      // Alt navigasyon çubuğu
     );
   }
 }
