@@ -105,12 +105,18 @@ lib/
 
 ├── modeller/ # Veri modelleri
 
-├── ekranlar/ # Uygulama ekranları
-
+├── screens/ # Uygulama ekranları
+└── home_screen.dart
+└── library_screen.dart
+└── loading_screen.dart
+└── notification_screen.dart
+└── profile_screen.dart
+└── search_screen.dart
 ├── widgets/ # Tekrar kullanılabilir arayüz öğeleri
-
+└── bottom_menu.dart
+└── logo.dart
 ├── servisler/ # API servisleri
-
+└── api.dart
 └── yardımcılar/ # Yardımcı fonksiyonlar
 
 ```
@@ -119,7 +125,9 @@ lib/
 
 ## Ekran Görüntüleri
 
-[Uygulama ekran görüntüleri buraya eklenecek]
+[https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/home_Screen.png?raw=true]
+[https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/profile_Screen.png?raw=true]
+[https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/search_Screen.png?raw=true]
 
   
 
