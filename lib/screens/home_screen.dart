@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_app/core/routes.dart';
 import 'package:go_router/go_router.dart';
-import 'search_screen.dart';
+import '../widgets/bottom_menu.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -11,126 +11,69 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 52, 52, 52),
-      // AppBar
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(50, 0, 0, 0),
+        backgroundColor: const Color.fromARGB(255, 26, 26, 26),
         iconTheme: const IconThemeData(
           color: Colors.white,
         ),
-        actions: [
-          IconButton(
-            icon: const Icon(CupertinoIcons.bell),
-            onPressed: () {
-              context.go("/notification");
-            },
+        leading: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Image.asset(
+            'assets/images/logo.png',
+            fit: BoxFit.contain,
           ),
-          IconButton(
-            icon: const Icon(CupertinoIcons.person),
-            onPressed: () {
-              context.go("/profile");
-            },
+        ),
+        title: const Text(
+          'Noisekloud',
+          style: TextStyle(
+            color: Color(0xFFE95620),
+            fontWeight: FontWeight.bold,
           ),
-        ],
+        ),
+        actions: [],
       ),
-
-      // Drawer (Yan Menü)
-      // drawer: Drawer(
-      //   child: Column(
-      //     children: [
-      //       // Drawer Header
-      //       Container(
-      //         height: 200,
-      //         color: Colors.blue,
-      //         child: Column(
-      //           mainAxisAlignment: MainAxisAlignment.center,
-      //           children: [
-      //             const Icon(
-      //               CupertinoIcons.person_circle,
-      //               size: 80,
-      //               color: Colors.white,
-      //             ),
-      //             const SizedBox(height: 10),
-      //             const Text(
-      //               'Kullanıcı Adı',
-      //               style: TextStyle(
-      //                 color: Colors.white,
-      //                 fontSize: 18,
-      //               ),
-      //             ),
-      //           ],
-      //         ),
-      //       ),
-      //       // Menü öğeleri
-      //       ListTile(
-      //         leading: const Icon(CupertinoIcons.home),
-      //         title: const Text('Ana Sayfa'),
-      //         onTap: () {
-      //           Navigator.pop(context);
-      //         },
-      //       ),
-      //       ListTile(
-      //         leading: const Icon(CupertinoIcons.settings),
-      //         title: const Text('Ayarlar'),
-      //         onTap: () {
-      //           Navigator.pop(context);
-      //         },
-      //       ),
-      //     ],
-      //   ),
-      // ),
-
-      // Ana içerik
       body: Column(
         children: [
-          // Örnek bir satır: Şarkı bilgisi
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Sol taraf: Resim
                 Container(
-                  width: 60, // Resim genişliği
-                  height: 60, // Resim yüksekliği
+                  width: 60,
+                  height: 60,
                   decoration: BoxDecoration(
                     image: const DecorationImage(
-                      image: AssetImage(
-                          'assets/images/coverArt_1.png'), // Resim yolu
+                      image: AssetImage('assets/images/coverArt_1.png'),
                       fit: BoxFit.cover,
                     ),
-                    borderRadius:
-                        BorderRadius.circular(8), // Köşeleri yuvarlatma
+                    borderRadius: BorderRadius.circular(8),
                   ),
                 ),
-                const SizedBox(width: 16), // Resim ve metin arası boşluk
-
-                // Sağ taraf: Şarkı bilgileri
+                const SizedBox(width: 16),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Saturn Devouring His Son', // Şarkı adı
+                        'Saturn Devouring His Son',
                         style: TextStyle(
                           fontSize: 16,
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      const SizedBox(
-                          height: 4), // Şarkı adı ile sanatçı adı arası boşluk
+                      const SizedBox(height: 4),
                       Text(
-                        'Jornada Del Muerto', // Sanatçı adı
+                        'Jornada Del Muerto',
                         style: TextStyle(
                           fontSize: 14,
                           color: Colors.grey,
                         ),
                       ),
-                      const SizedBox(
-                          height:
-                              4), // Sanatçı adı ile dinlenme sayısı arası boşluk
+                      const SizedBox(height: 4),
                       Text(
-                        'Dinlenme: 1.429', // Dinlenme sayısı
+                        'Dinlenme: 1.429',
                         style: TextStyle(
                           fontSize: 12,
                           color: Colors.grey,
@@ -146,64 +89,53 @@ class HomeScreen extends StatelessWidget {
                   child: IconButton(
                     icon: const Icon(Icons.more_vert),
                     color: Colors.white,
-                    onPressed: () {
-                      // Bos
-                    },
+                    onPressed: () {},
                   ),
                 )
               ],
             ),
           ),
-          const Divider(), // Satırları ayırmak için bir çizgi
-
+          const Divider(),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Sol taraf: Resim
                 Container(
-                  width: 60, // Resim genişliği
-                  height: 60, // Resim yüksekliği
+                  width: 60,
+                  height: 60,
                   decoration: BoxDecoration(
                     image: const DecorationImage(
-                      image: AssetImage(
-                          'assets/images/coverArt_2.png'), // Resim yolu
+                      image: AssetImage('assets/images/coverArt_2.png'),
                       fit: BoxFit.cover,
                     ),
-                    borderRadius:
-                        BorderRadius.circular(8), // Köşeleri yuvarlatma
+                    borderRadius: BorderRadius.circular(8),
                   ),
                 ),
-                const SizedBox(width: 16), // Resim ve metin arası boşluk
-
-                // Sağ taraf: Şarkı bilgileri
+                const SizedBox(width: 16),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Redlight Moments', // Şarkı adı
+                        'Redlight Moments',
                         style: TextStyle(
                           fontSize: 16,
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      const SizedBox(
-                          height: 4), // Şarkı adı ile sanatçı adı arası boşluk
+                      const SizedBox(height: 4),
                       Text(
-                        'Bladee', // Sanatçı adı
+                        'Bladee',
                         style: TextStyle(
                           fontSize: 14,
                           color: Colors.grey,
                         ),
                       ),
-                      const SizedBox(
-                          height:
-                              4), // Sanatçı adı ile dinlenme sayısı arası boşluk
+                      const SizedBox(height: 4),
                       Text(
-                        'Dinlenme: 3.537.194', // Dinlenme sayısı
+                        'Dinlenme: 3.537.194',
                         style: TextStyle(
                           fontSize: 12,
                           color: Colors.grey,
@@ -219,64 +151,53 @@ class HomeScreen extends StatelessWidget {
                   child: IconButton(
                     icon: const Icon(Icons.more_vert),
                     color: Colors.white,
-                    onPressed: () {
-                      // Bos
-                    },
+                    onPressed: () {},
                   ),
                 )
               ],
             ),
           ),
-          const Divider(), // Satırları ayırmak için bir çizgi
-
+          const Divider(),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Sol taraf: Resim
                 Container(
-                  width: 60, // Resim genişliği
-                  height: 60, // Resim yüksekliği
+                  width: 60,
+                  height: 60,
                   decoration: BoxDecoration(
                     image: const DecorationImage(
-                      image: AssetImage(
-                          'assets/images/coverArt_3.png'), // Resim yolu
+                      image: AssetImage('assets/images/coverArt_3.png'),
                       fit: BoxFit.cover,
                     ),
-                    borderRadius:
-                        BorderRadius.circular(8), // Köşeleri yuvarlatma
+                    borderRadius: BorderRadius.circular(8),
                   ),
                 ),
-                const SizedBox(width: 16), // Resim ve metin arası boşluk
-
-                // Sağ taraf: Şarkı bilgileri
+                const SizedBox(width: 16),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Me Siento Ridículo', // Şarkı adı
+                        'Me Siento Ridículo',
                         style: TextStyle(
                           fontSize: 16,
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      const SizedBox(
-                          height: 4), // Şarkı adı ile sanatçı adı arası boşluk
+                      const SizedBox(height: 4),
                       Text(
-                        'Finale', // Sanatçı adı
+                        'Finale',
                         style: TextStyle(
                           fontSize: 14,
                           color: Colors.grey,
                         ),
                       ),
-                      const SizedBox(
-                          height:
-                              4), // Sanatçı adı ile dinlenme sayısı arası boşluk
+                      const SizedBox(height: 4),
                       Text(
-                        'Dinlenme: 372.373', // Dinlenme sayısı
+                        'Dinlenme: 372.373',
                         style: TextStyle(
                           fontSize: 12,
                           color: Colors.grey,
@@ -292,64 +213,53 @@ class HomeScreen extends StatelessWidget {
                   child: IconButton(
                     icon: const Icon(Icons.more_vert),
                     color: Colors.white,
-                    onPressed: () {
-                      // Bos
-                    },
+                    onPressed: () {},
                   ),
                 )
               ],
             ),
           ),
-          const Divider(), // Satırları ayırmak için bir çizgi
-
+          const Divider(),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Sol taraf: Resim
                 Container(
-                  width: 60, // Resim genişliği
-                  height: 60, // Resim yüksekliği
+                  width: 60,
+                  height: 60,
                   decoration: BoxDecoration(
                     image: const DecorationImage(
-                      image: AssetImage(
-                          'assets/images/coverArt_4.png'), // Resim yolu
+                      image: AssetImage('assets/images/coverArt_4.png'),
                       fit: BoxFit.cover,
                     ),
-                    borderRadius:
-                        BorderRadius.circular(8), // Köşeleri yuvarlatma
+                    borderRadius: BorderRadius.circular(8),
                   ),
                 ),
-                const SizedBox(width: 16), // Resim ve metin arası boşluk
-
-                // Sağ taraf: Şarkı bilgileri
+                const SizedBox(width: 16),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Clifford the Big Red Stab Wound', // Şarkı adı
+                        'Clifford the Big Red Stab Wound',
                         style: TextStyle(
                           fontSize: 16,
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      const SizedBox(
-                          height: 4), // Şarkı adı ile sanatçı adı arası boşluk
+                      const SizedBox(height: 4),
                       Text(
-                        'Your Arms Are My Cocoon', // Sanatçı adı
+                        'Your Arms Are My Cocoon',
                         style: TextStyle(
                           fontSize: 14,
                           color: Colors.grey,
                         ),
                       ),
-                      const SizedBox(
-                          height:
-                              4), // Sanatçı adı ile dinlenme sayısı arası boşluk
+                      const SizedBox(height: 4),
                       Text(
-                        'Dinlenme: 550.425', // Dinlenme sayısı
+                        'Dinlenme: 550.425',
                         style: TextStyle(
                           fontSize: 12,
                           color: Colors.grey,
@@ -365,64 +275,53 @@ class HomeScreen extends StatelessWidget {
                   child: IconButton(
                     icon: const Icon(Icons.more_vert),
                     color: Colors.white,
-                    onPressed: () {
-                      // Bos
-                    },
+                    onPressed: () {},
                   ),
                 )
               ],
             ),
           ),
-          const Divider(), // Satırları ayırmak için bir çizgi
-
+          const Divider(),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Sol taraf: Resim
                 Container(
-                  width: 60, // Resim genişliği
-                  height: 60, // Resim yüksekliği
+                  width: 60,
+                  height: 60,
                   decoration: BoxDecoration(
                     image: const DecorationImage(
-                      image: AssetImage(
-                          'assets/images/coverArt_5.png'), // Resim yolu
+                      image: AssetImage('assets/images/coverArt_5.png'),
                       fit: BoxFit.cover,
                     ),
-                    borderRadius:
-                        BorderRadius.circular(8), // Köşeleri yuvarlatma
+                    borderRadius: BorderRadius.circular(8),
                   ),
                 ),
-                const SizedBox(width: 16), // Resim ve metin arası boşluk
-
-                // Sağ taraf: Şarkı bilgileri
+                const SizedBox(width: 16),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        '你就像太陽，永遠照耀著我。', // Şarkı adı
+                        '你就像太陽，永遠照耀著我。',
                         style: TextStyle(
                           fontSize: 16,
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      const SizedBox(
-                          height: 4), // Şarkı adı ile sanatçı adı arası boşluk
+                      const SizedBox(height: 4),
                       Text(
-                        'AkuraVortex', // Sanatçı adı
+                        'AkuraVortex',
                         style: TextStyle(
                           fontSize: 14,
                           color: Colors.grey,
                         ),
                       ),
-                      const SizedBox(
-                          height:
-                              4), // Sanatçı adı ile dinlenme sayısı arası boşluk
+                      const SizedBox(height: 4),
                       Text(
-                        'Dinlenme: 38.656', // Dinlenme sayısı
+                        'Dinlenme: 38.656',
                         style: TextStyle(
                           fontSize: 12,
                           color: Colors.grey,
@@ -438,44 +337,16 @@ class HomeScreen extends StatelessWidget {
                   child: IconButton(
                     icon: const Icon(Icons.more_vert),
                     color: Colors.white,
-                    onPressed: () {
-                      // Bos
-                    },
+                    onPressed: () {},
                   ),
                 )
               ],
             ),
           ),
-          const Divider(), // Satırları ayırmak için bir çizgi
+          const Divider(),
         ],
       ),
-
-      bottomNavigationBar: Container(
-        height: 70,
-        color: Color.fromARGB(50, 0, 0, 0),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            IconButton(
-                onPressed: () {
-                  context.go("/home");
-                },
-                icon: Icon(CupertinoIcons.cloud)),
-            IconButton(
-                onPressed: () {
-                  context.go("/search");
-                },
-                icon: Icon(CupertinoIcons.search)),
-            IconButton(
-                onPressed: () {
-                  context.go("/library");
-                },
-                icon: Icon(CupertinoIcons.music_albums)),
-          ],
-        ),
-      ),
-
-      // Alt navigasyon çubuğu
+      bottomNavigationBar: BottomMenu(),
     );
   }
 }
