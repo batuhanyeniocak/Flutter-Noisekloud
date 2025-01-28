@@ -6,6 +6,7 @@ import '../screens/home_screen.dart';
 import '../screens/login_screen.dart';
 import '../screens/notification_screen.dart';
 import '../screens/profile_screen.dart';
+import '../screens/register_screen.dart';
 
 // Router yapılandırması
 final router = GoRouter(
@@ -38,6 +39,10 @@ final router = GoRouter(
     GoRoute(
       path: '/login',
       builder: (context, state) => const LoginScreen(),
+    ),
+    GoRoute(
+      path: '/register',
+      builder: (context, state) => const RegisterScreen(),
     ),
   ],
 );

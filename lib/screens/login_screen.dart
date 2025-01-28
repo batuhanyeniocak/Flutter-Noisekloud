@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/core/themes.dart';
-import '../core/constants.dart';
+import 'package:go_router/go_router.dart';
 import '../widgets/bottom_menu.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -19,7 +18,7 @@ class LoginScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Noisekloud',
+              'Noisekloud - Login',
               style: TextStyle(
                 fontSize: 32,
                 color: colorScheme.primary,
@@ -29,23 +28,23 @@ class LoginScreen extends StatelessWidget {
             SizedBox(height: 32),
             TextField(
               decoration: InputDecoration(
-                filled: true,
-                fillColor: colorScheme.surface,
-                border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.person),
-                labelStyle: TextStyle(color: colorScheme.primary),
-              ),
+                  filled: true,
+                  fillColor: colorScheme.surface,
+                  border: OutlineInputBorder(),
+                  prefixIcon: Icon(Icons.person),
+                  labelStyle: TextStyle(color: colorScheme.primary),
+                  hintText: 'Username'),
             ),
             SizedBox(height: 16),
             TextField(
               obscureText: true,
               decoration: InputDecoration(
-                filled: true,
-                fillColor: colorScheme.surface,
-                border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.lock),
-                labelStyle: TextStyle(color: colorScheme.surface),
-              ),
+                  filled: true,
+                  fillColor: colorScheme.surface,
+                  border: OutlineInputBorder(),
+                  prefixIcon: Icon(Icons.lock),
+                  labelStyle: TextStyle(color: colorScheme.surface),
+                  hintText: 'Password'),
             ),
             SizedBox(height: 32),
             ElevatedButton(
@@ -59,7 +58,7 @@ class LoginScreen extends StatelessWidget {
             SizedBox(height: 16),
             TextButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/register');
+                context.go("/register");
               },
               child: Text(
                 'Don\'t have an account? Register!',
