@@ -11,7 +11,7 @@ class BottomMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 70,
-      color: Color.fromARGB(255, 26, 26, 26),
+      color: const Color.fromARGB(255, 26, 26, 26),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
@@ -19,7 +19,7 @@ class BottomMenu extends StatelessWidget {
               onPressed: () {
                 context.go("/home");
               },
-              icon: Icon(
+              icon: const Icon(
                 CupertinoIcons.cloud,
                 color: Color.fromARGB(255, 233, 86, 32),
               )),
@@ -27,7 +27,7 @@ class BottomMenu extends StatelessWidget {
               onPressed: () {
                 context.go("/search");
               },
-              icon: Icon(
+              icon: const Icon(
                 CupertinoIcons.search,
                 color: Color.fromARGB(255, 233, 86, 32),
               )),
@@ -35,7 +35,7 @@ class BottomMenu extends StatelessWidget {
               onPressed: () {
                 context.go("/library");
               },
-              icon: Icon(
+              icon: const Icon(
                 CupertinoIcons.music_albums,
                 color: Color.fromARGB(255, 233, 86, 32),
               )),

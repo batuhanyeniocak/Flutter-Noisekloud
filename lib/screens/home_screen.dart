@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_app/core/routes.dart';
 import 'package:go_router/go_router.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../widgets/bottom_menu.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -9,12 +10,15 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final colorScheme = theme.colorScheme;
+
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 52, 52, 52),
+      backgroundColor: colorScheme.surface,
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 26, 26, 26),
-        iconTheme: const IconThemeData(
-          color: Colors.white,
+        backgroundColor: colorScheme.secondary,
+        iconTheme: IconThemeData(
+          color: colorScheme.onPrimary,
         ),
         leading: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -23,14 +27,14 @@ class HomeScreen extends StatelessWidget {
             fit: BoxFit.contain,
           ),
         ),
-        title: const Text(
+        title: Text(
           'Noisekloud',
           style: TextStyle(
-            color: Color(0xFFE95620),
+            color: colorScheme.primary,
             fontWeight: FontWeight.bold,
           ),
         ),
-        actions: [],
+        actions: const [],
       ),
       body: Column(
         children: [
@@ -59,7 +63,7 @@ class HomeScreen extends StatelessWidget {
                         'Saturn Devouring His Son',
                         style: TextStyle(
                           fontSize: 16,
-                          color: Colors.white,
+                          color: colorScheme.onSurface,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -68,7 +72,7 @@ class HomeScreen extends StatelessWidget {
                         'Jornada Del Muerto',
                         style: TextStyle(
                           fontSize: 14,
-                          color: Colors.grey,
+                          color: colorScheme.onSurfaceVariant,
                         ),
                       ),
                       const SizedBox(height: 4),
@@ -76,7 +80,7 @@ class HomeScreen extends StatelessWidget {
                         'Dinlenme: 1.429',
                         style: TextStyle(
                           fontSize: 12,
-                          color: Colors.grey,
+                          color: colorScheme.onSurfaceVariant,
                         ),
                       ),
                     ],
@@ -88,7 +92,7 @@ class HomeScreen extends StatelessWidget {
                   height: 60,
                   child: IconButton(
                     icon: const Icon(Icons.more_vert),
-                    color: Colors.white,
+                    color: colorScheme.onSurface,
                     onPressed: () {},
                   ),
                 )
@@ -121,7 +125,7 @@ class HomeScreen extends StatelessWidget {
                         'Redlight Moments',
                         style: TextStyle(
                           fontSize: 16,
-                          color: Colors.white,
+                          color: colorScheme.onSurface,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -130,7 +134,7 @@ class HomeScreen extends StatelessWidget {
                         'Bladee',
                         style: TextStyle(
                           fontSize: 14,
-                          color: Colors.grey,
+                          color: colorScheme.onSurfaceVariant,
                         ),
                       ),
                       const SizedBox(height: 4),
@@ -138,7 +142,7 @@ class HomeScreen extends StatelessWidget {
                         'Dinlenme: 3.537.194',
                         style: TextStyle(
                           fontSize: 12,
-                          color: Colors.grey,
+                          color: colorScheme.onSurfaceVariant,
                         ),
                       ),
                     ],
@@ -150,7 +154,7 @@ class HomeScreen extends StatelessWidget {
                   height: 60,
                   child: IconButton(
                     icon: const Icon(Icons.more_vert),
-                    color: Colors.white,
+                    color: colorScheme.onSurface,
                     onPressed: () {},
                   ),
                 )
@@ -183,7 +187,7 @@ class HomeScreen extends StatelessWidget {
                         'Me Siento Ridículo',
                         style: TextStyle(
                           fontSize: 16,
-                          color: Colors.white,
+                          color: colorScheme.onSurface,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -192,7 +196,7 @@ class HomeScreen extends StatelessWidget {
                         'Finale',
                         style: TextStyle(
                           fontSize: 14,
-                          color: Colors.grey,
+                          color: colorScheme.onSurfaceVariant,
                         ),
                       ),
                       const SizedBox(height: 4),
@@ -200,7 +204,7 @@ class HomeScreen extends StatelessWidget {
                         'Dinlenme: 372.373',
                         style: TextStyle(
                           fontSize: 12,
-                          color: Colors.grey,
+                          color: colorScheme.onSurfaceVariant,
                         ),
                       ),
                     ],
@@ -212,7 +216,7 @@ class HomeScreen extends StatelessWidget {
                   height: 60,
                   child: IconButton(
                     icon: const Icon(Icons.more_vert),
-                    color: Colors.white,
+                    color: colorScheme.onSurface,
                     onPressed: () {},
                   ),
                 )
@@ -245,7 +249,7 @@ class HomeScreen extends StatelessWidget {
                         'Clifford the Big Red Stab Wound',
                         style: TextStyle(
                           fontSize: 16,
-                          color: Colors.white,
+                          color: colorScheme.onSurface,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -254,7 +258,7 @@ class HomeScreen extends StatelessWidget {
                         'Your Arms Are My Cocoon',
                         style: TextStyle(
                           fontSize: 14,
-                          color: Colors.grey,
+                          color: colorScheme.onSurfaceVariant,
                         ),
                       ),
                       const SizedBox(height: 4),
@@ -262,7 +266,7 @@ class HomeScreen extends StatelessWidget {
                         'Dinlenme: 550.425',
                         style: TextStyle(
                           fontSize: 12,
-                          color: Colors.grey,
+                          color: colorScheme.onSurfaceVariant,
                         ),
                       ),
                     ],
@@ -274,7 +278,7 @@ class HomeScreen extends StatelessWidget {
                   height: 60,
                   child: IconButton(
                     icon: const Icon(Icons.more_vert),
-                    color: Colors.white,
+                    color: colorScheme.onSurface,
                     onPressed: () {},
                   ),
                 )
@@ -307,7 +311,7 @@ class HomeScreen extends StatelessWidget {
                         '你就像太陽，永遠照耀著我。',
                         style: TextStyle(
                           fontSize: 16,
-                          color: Colors.white,
+                          color: colorScheme.onSurface,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -316,7 +320,7 @@ class HomeScreen extends StatelessWidget {
                         'AkuraVortex',
                         style: TextStyle(
                           fontSize: 14,
-                          color: Colors.grey,
+                          color: colorScheme.onSurfaceVariant,
                         ),
                       ),
                       const SizedBox(height: 4),
@@ -324,7 +328,7 @@ class HomeScreen extends StatelessWidget {
                         'Dinlenme: 38.656',
                         style: TextStyle(
                           fontSize: 12,
-                          color: Colors.grey,
+                          color: colorScheme.onSurfaceVariant,
                         ),
                       ),
                     ],
@@ -336,7 +340,7 @@ class HomeScreen extends StatelessWidget {
                   height: 60,
                   child: IconButton(
                     icon: const Icon(Icons.more_vert),
-                    color: Colors.white,
+                    color: colorScheme.onSurface,
                     onPressed: () {},
                   ),
                 )
@@ -346,7 +350,7 @@ class HomeScreen extends StatelessWidget {
           const Divider(),
         ],
       ),
-      bottomNavigationBar: BottomMenu(),
+      bottomNavigationBar: const BottomMenu(),
     );
   }
 }

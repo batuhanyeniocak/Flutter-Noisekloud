@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../core/constants.dart';
 import '../widgets/bottom_menu.dart';
 
 class SearchScreen extends StatelessWidget {
@@ -7,8 +6,11 @@ class SearchScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final colorScheme = theme.colorScheme;
+
     return Scaffold(
-      backgroundColor: arkaPlanRenk,
+      backgroundColor: colorScheme.surface,
       body: Column(
         children: [
           Padding(
@@ -17,19 +19,20 @@ class SearchScreen extends StatelessWidget {
               enabled: true,
               decoration: InputDecoration(
                 filled: true,
-                fillColor: Colors.white,
+                fillColor: colorScheme.secondary,
                 hintText: 'Ara...',
+                hintStyle: TextStyle(color: colorScheme.primary),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10.0),
                   borderSide: BorderSide.none,
                 ),
-                prefixIcon: Icon(Icons.search, color: Colors.grey),
+                prefixIcon: Icon(Icons.search, color: colorScheme.primary),
               ),
             ),
           ),
         ],
       ),
-      bottomNavigationBar: BottomMenu(),
+      bottomNavigationBar: const BottomMenu(),
     );
   }
 }

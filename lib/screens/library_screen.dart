@@ -7,7 +7,7 @@ class LibraryScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: arkaPlanRenk,
       body: Center(
         child: Text("kutuphane"),

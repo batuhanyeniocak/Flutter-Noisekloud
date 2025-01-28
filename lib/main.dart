@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/core/themes.dart';
 import 'core/routes.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized(); // Flutter widget'larını başlat
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -12,13 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'Flutter App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      routerConfig: router, // go_router yapılandırmamızı kullan
-      debugShowCheckedModeBanner: false, // Debug bandını kaldır
+      title: 'Noisekloud',
+      themeMode: ThemeMode.dark,
+      theme: lightTheme,
+      darkTheme: darkTheme,
+      routerConfig: router,
+      debugShowCheckedModeBanner: false,
     );
   }
 }

@@ -21,7 +21,7 @@ class ProfileScreen extends StatelessWidget {
       body: Column(
         children: [
           const SizedBox(height: 20),
-          CircleAvatar(
+          const CircleAvatar(
             radius: 50,
             backgroundImage: AssetImage('assets/images/logo.png'),
             backgroundColor: Colors.grey,
@@ -36,9 +36,9 @@ class ProfileScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 20),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
+            children: [
               Column(
                 children: [
                   Text(
