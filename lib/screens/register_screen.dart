@@ -38,17 +38,6 @@ class RegisterScreen extends StatelessWidget {
             ),
             SizedBox(height: 16),
             TextField(
-              decoration: InputDecoration(
-                filled: true,
-                fillColor: colorScheme.surface,
-                border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.email),
-                labelStyle: TextStyle(color: colorScheme.primary),
-                hintText: 'Email',
-              ),
-            ),
-            SizedBox(height: 16),
-            TextField(
               obscureText: true,
               decoration: InputDecoration(
                 filled: true,
