@@ -54,7 +54,7 @@ class BottomMenu extends StatelessWidget {
               color: Color.fromARGB(255, 233, 86, 32),
             ),
             onPressed: () {
-              context.go("/profile");
+              context.go("/login");
             },
           ),
         ],
