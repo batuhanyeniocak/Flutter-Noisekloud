@@ -59,7 +59,7 @@ class LoginScreen extends StatelessWidget {
             const SizedBox(height: 16),
             TextButton(
               onPressed: () {
-                context.go("/register");
+                context.push("/register");
               },
               child: Text(
                 'Don\'t have an account? Register!',

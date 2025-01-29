@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/core/themes.dart';
+import 'package:provider/provider.dart';
 import 'core/routes.dart';
+import 'core/themes.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  runApp(const MyApp());
+  WidgetsFlutterBinding.ensureInitialized(); // Flutter widget'larını başlat
+  runApp(
+    ChangeNotifierProvider(
+      create: (_) => ThemeProvider(),
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -12,13 +18,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      title: 'Noisekloud',
-      themeMode: ThemeMode.dark,
-      theme: lightTheme,
-      darkTheme: darkTheme,
-      routerConfig: router,
-      debugShowCheckedModeBanner: false,
-    );
+    return Consumer<ThemeProvider>(builder: (context, themeProvider, child) {
+      return MaterialApp.router(
+        title: 'NoiseKloud',
+        themeMode: themeProvider.isDark ? ThemeMode.dark : ThemeMode.light,
+        theme: lightTheme,
+        darkTheme: darkTheme,
+        routerConfig: router, // go_router yapılandırmamızı kullan
+        debugShowCheckedModeBanner: false, // Debug bandını kaldır
+      );
+    });
   }
 }

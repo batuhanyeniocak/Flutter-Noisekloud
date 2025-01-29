@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/core/routes.dart';
+import 'package:go_router/go_router.dart';
 import '../widgets/bottom_menu.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -30,7 +32,20 @@ class HomeScreen extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
-        actions: const [],
+        actions: [
+          IconButton(
+            icon: Icon(Icons.settings, color: colorScheme.primary),
+            onPressed: () {
+              context.push("/settings");
+            },
+          ),
+          IconButton(
+            icon: Icon(Icons.person, color: colorScheme.primary),
+            onPressed: () {
+              context.push("/profile");
+            },
+          ),
+        ],
       ),
       body: Column(
         children: [
