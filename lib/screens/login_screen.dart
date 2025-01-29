@@ -25,37 +25,38 @@ class LoginScreen extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(height: 32),
+            const SizedBox(height: 32),
             TextField(
               decoration: InputDecoration(
                   filled: true,
                   fillColor: colorScheme.surface,
-                  border: OutlineInputBorder(),
-                  prefixIcon: Icon(Icons.person),
+                  border: const OutlineInputBorder(),
+                  prefixIcon: const Icon(Icons.person),
                   labelStyle: TextStyle(color: colorScheme.primary),
                   hintText: 'Username'),
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             TextField(
               obscureText: true,
               decoration: InputDecoration(
                   filled: true,
                   fillColor: colorScheme.surface,
-                  border: OutlineInputBorder(),
-                  prefixIcon: Icon(Icons.lock),
+                  border: const OutlineInputBorder(),
+                  prefixIcon: const Icon(Icons.lock),
                   labelStyle: TextStyle(color: colorScheme.surface),
                   hintText: 'Password'),
             ),
-            SizedBox(height: 32),
+            const SizedBox(height: 32),
             ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 50, vertical: 15),
                 backgroundColor: colorScheme.secondary,
               ),
-              child: Text('Login', style: TextStyle(fontSize: 18)),
+              child: const Text('Login', style: TextStyle(fontSize: 18)),
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             TextButton(
               onPressed: () {
                 context.go("/register");
