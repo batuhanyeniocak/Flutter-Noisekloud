@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/core/routes.dart';
-import 'package:go_router/go_router.dart';
 import '../widgets/bottom_menu.dart';
 
 class NotificationScreen extends StatelessWidget {
