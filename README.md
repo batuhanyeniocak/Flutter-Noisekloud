@@ -127,7 +127,7 @@ lib/
 
 # Light Tema
 
-![homeLight](https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/lightTheme/homeScreen_SS.png?raw=true)
+<img src="https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/lightTheme/homeScreen_SS.png?raw=true" width=50% height=50%>
 ![searchLight](https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets\images\screenshots\lightTheme\searchScreen_SS.png?raw=true)
 ![libraryLight](https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets\images\screenshots\lightTheme\libraryScreen_SS.png?raw=true)
 ![notificationLight](https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets\images\screenshots\lightTheme\notificationScreen_SS.png?raw=true)
