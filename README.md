@@ -125,9 +125,17 @@ lib/
 
 ## Ekran Görüntüleri
 
-![home](https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/home_Screen.png?raw=true)
-![profile](https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/profile_Screen.png?raw=true)
-![search](https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/search_Screen.png?raw=true)
+* Light Tema
+
+![homeLight](assets\images\screenshots\lightTheme\homeScreen_SS.png)
+![searchLight](assets\images\screenshots\lightTheme\searchScreen_SS.png)
+![libraryLight](assets\images\screenshots\lightTheme\libraryScreen_SS.png)
+![notificationLight](assets\images\screenshots\lightTheme\notificationScreen_SS.png)
+![loginLight](assets\images\screenshots\lightTheme\loginScreen_SS.png)
+![registerLight](assets\images\screenshots\lightTheme\registerScreen_SS.png)
+![settingsLight](assets\images\screenshots\lightTheme\settingsScreen_SS.png)
+![profileLight](assets\images\screenshots\lightTheme\profileScreen_SS.png)
+
 
   
 
