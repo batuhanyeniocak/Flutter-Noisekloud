@@ -132,7 +132,9 @@ lib/
 
 
 ## Tanitim Videosu
-  
+
+https://github.com/user-attachments/assets/dac318ab-4a73-461f-aa58-9ae6750c68ce
+
 
 ## Ekran Görüntüleri
 
