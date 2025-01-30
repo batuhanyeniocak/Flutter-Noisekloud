@@ -11,12 +11,17 @@ class ProfileScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
+        title: Text(
           'Profil',
-          style: TextStyle(fontWeight: FontWeight.bold),
+          style: TextStyle(
+            color: colorScheme.primary,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        iconTheme: IconThemeData(
+          color: colorScheme.primary,
         ),
         backgroundColor: colorScheme.secondary,
-        centerTitle: true,
       ),
       backgroundColor: colorScheme.surface,
       body: Column(
@@ -59,6 +64,21 @@ class ProfileScreen extends StatelessWidget {
             ),
             child: Text(
               'Profili Düzenle',
+              style: TextStyle(color: colorScheme.onPrimary),
+            ),
+          ),
+          const SizedBox(height: 10),
+          ElevatedButton(
+            onPressed: () {},
+            style: ElevatedButton.styleFrom(
+              backgroundColor: colorScheme.error,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            ),
+            child: Text(
+              'Çıkış Yap',
               style: TextStyle(color: colorScheme.onPrimary),
             ),
           ),
