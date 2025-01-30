@@ -127,14 +127,14 @@ lib/
 
 * Light Tema
 
-![homeLight](assets\images\screenshots\lightTheme\homeScreen_SS.png)
-![searchLight](assets\images\screenshots\lightTheme\searchScreen_SS.png)
-![libraryLight](assets\images\screenshots\lightTheme\libraryScreen_SS.png)
-![notificationLight](assets\images\screenshots\lightTheme\notificationScreen_SS.png)
-![loginLight](assets\images\screenshots\lightTheme\loginScreen_SS.png)
-![registerLight](assets\images\screenshots\lightTheme\registerScreen_SS.png)
-![settingsLight](assets\images\screenshots\lightTheme\settingsScreen_SS.png)
-![profileLight](assets\images\screenshots\lightTheme\profileScreen_SS.png)
+![homeLight](https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/lightTheme/homeScreen_SS.png =300x377)
+![searchLight](https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets\images\screenshots\lightTheme\searchScreen_SS.png)
+![libraryLight](https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets\images\screenshots\lightTheme\libraryScreen_SS.png)
+![notificationLight](https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets\images\screenshots\lightTheme\notificationScreen_SS.png)
+![loginLight](https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets\images\screenshots\lightTheme\loginScreen_SS.png)
+![registerLight](https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets\images\screenshots\lightTheme\registerScreen_SS.png)
+![settingsLight](https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets\images\screenshots\lightTheme\settingsScreen_SS.png)
+![profileLight](https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets\images\screenshots\lightTheme\profileScreen_SS.png)
 
 
   
