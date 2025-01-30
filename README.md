@@ -1,12 +1,8 @@
 
 # Flutter Projesi
-
-  
-
+ 
 ![İstinye Üniversitesi](https://www.unitededucation.com/linklogoch/istinye-university-logo.png)
-
-  
-
+ 
 ## Proje Hakkında
 
 Kullanicilara ucretsiz sekilde muzik dinleme ve muzik yukleme imkani sunan bir platform.
@@ -16,12 +12,12 @@ Kullanicilara ucretsiz sekilde muzik dinleme ve muzik yukleme imkani sunan bir p
 ## Ekibimiz
 
 -  **Danışman:**  
-- Keyvan Arasteh [GitHub](https://github.com/keyvanarasteh)
+- Keyvan Arasteh -> [GitHub](https://github.com/keyvanarasteh)
 
 
 -  **Takım Üyeleri:**
 
-- Batuhan Yeniocak [GitHub](https://github.com/batuhanyeniocak)
+- Batuhan Yeniocak -> [GitHub](https://github.com/batuhanyeniocak)
 
   
 
@@ -34,7 +30,6 @@ Kullanicilara ucretsiz sekilde muzik dinleme ve muzik yukleme imkani sunan bir p
 - Kullanici istegine gore gece veya gunduz modlarini secebilecek.
 
   
-
 ## Kullanılan Teknolojiler
 
 - Flutter
@@ -107,7 +102,6 @@ flutter run https://github.com/batuhanyeniocak/Flutter-Noisekloud
 
 ```
 
-
 lib/
 
 ├── core/
@@ -136,6 +130,8 @@ lib/
 
 ```
 
+
+## Tanitim Videosu
   
 
 ## Ekran Görüntüleri
@@ -161,6 +157,7 @@ lib/
 <img src="https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/darkTheme/registerScreen_SS.png?raw=true" width=30% height=30%>
 <img src="https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/darkTheme/settingsScreen_SS.png?raw=true" width=30% height=30%>
 <img src="https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/darkTheme/profileScreen_SS.png?raw=true" width=30% height=30%>
+
 
   
 ## Projeye Katkı Sağlama

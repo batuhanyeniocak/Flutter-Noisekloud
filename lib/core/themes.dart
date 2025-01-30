@@ -107,3 +107,5 @@ final darkTheme = ThemeData(
     displayLarge: GoogleFonts.abrilFatface(),
   ),
 );
+
+// default fontu sevdigim icin font kullanmak istemedim hocam
