@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-import '../core/constants.dart';
 import '../widgets/bottom_menu.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -8,116 +6,88 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final colorScheme = theme.colorScheme;
+
     return Scaffold(
       appBar: AppBar(
         title: const Text(
           'Profil',
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(fontWeight: FontWeight.bold),
         ),
-        backgroundColor: const Color.fromARGB(255, 233, 86, 32),
+        backgroundColor: colorScheme.secondary,
         centerTitle: true,
       ),
-      backgroundColor: arkaPlanRenk,
+      backgroundColor: colorScheme.surface,
       body: Column(
         children: [
           const SizedBox(height: 20),
-          const CircleAvatar(
+          CircleAvatar(
             radius: 50,
-            backgroundImage: AssetImage('assets/images/logo.png'),
-            backgroundColor: Colors.grey,
+            backgroundImage: const AssetImage('assets/images/logo.png'),
+            backgroundColor: colorScheme.onSurfaceVariant,
           ),
           const SizedBox(height: 10),
-          const Text(
+          Text(
             'batuhanyeniocak',
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
-              color: Colors.white,
+              color: colorScheme.onSurface,
             ),
           ),
           const SizedBox(height: 20),
-          const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Column(
-                children: [
-                  Text(
-                    '0',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                    ),
-                  ),
-                  Text(
-                    'Takipçi',
-                    style: TextStyle(
-                      fontSize: 14,
-                      color: Colors.grey,
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(width: 40),
-              Column(
-                children: [
-                  Text(
-                    '0',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                    ),
-                  ),
-                  Text(
-                    'Takip Edilen',
-                    style: TextStyle(
-                      fontSize: 14,
-                      color: Colors.grey,
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(width: 40),
-              Column(
-                children: [
-                  Text(
-                    '0',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                    ),
-                  ),
-                  Text(
-                    'Beğeniler',
-                    style: TextStyle(
-                      fontSize: 14,
-                      color: Colors.grey,
-                    ),
-                  ),
-                ],
-              ),
+              _buildProfileStat('0', 'Takipçi', colorScheme),
+              const SizedBox(width: 40),
+              _buildProfileStat('0', 'Takip Edilen', colorScheme),
+              const SizedBox(width: 40),
+              _buildProfileStat('0', 'Beğeniler', colorScheme),
             ],
           ),
           const SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {},
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color.fromARGB(255, 233, 86, 32),
+              backgroundColor: colorScheme.primary,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10),
               ),
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             ),
-            child: const Text(
+            child: Text(
               'Profili Düzenle',
-              style: TextStyle(color: Colors.white),
+              style: TextStyle(color: colorScheme.onPrimary),
             ),
           ),
         ],
       ),
       bottomNavigationBar: const BottomMenu(),
+    );
+  }
+
+  Widget _buildProfileStat(
+      String count, String label, ColorScheme colorScheme) {
+    return Column(
+      children: [
+        Text(
+          count,
+          style: TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
+            color: colorScheme.onSurface,
+          ),
+        ),
+        Text(
+          label,
+          style: TextStyle(
+            fontSize: 14,
+            color: colorScheme.onSurfaceVariant,
+          ),
+        ),
+      ],
     );
   }
 }
