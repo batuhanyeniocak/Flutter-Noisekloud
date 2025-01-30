@@ -1,11 +1,11 @@
 
 # Flutter Projesi
- 
-![İstinye Üniversitesi](https://www.unitededucation.com/linklogoch/istinye-university-logo.png)
- 
+
+<img src="https://www.unitededucation.com/linklogoch/istinye-university-logo.png" width=30% height=30%>
+
 ## Proje Hakkında
 
-Kullanicilara ucretsiz sekilde muzik dinleme ve muzik yukleme imkani sunan bir platform.
+- Kullanicilara ucretsiz sekilde muzik dinleme ve muzik yukleme imkani sunan bir platform.
 
   
 
@@ -177,7 +177,7 @@ https://github.com/user-attachments/assets/dac318ab-4a73-461f-aa58-9ae6750c68ce
   
 ## Lisans
 
-MIT kapsamında lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasını inceleyebilirsiniz.
+- MIT kapsamında lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasını inceleyebilirsiniz.
 
   
 ## İletişim
