@@ -47,364 +47,366 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                  width: 60,
-                  height: 60,
-                  decoration: BoxDecoration(
-                    image: const DecorationImage(
-                      image: AssetImage('assets/images/coverArt_1.png'),
-                      fit: BoxFit.cover,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    width: 60,
+                    height: 60,
+                    decoration: BoxDecoration(
+                      image: const DecorationImage(
+                        image: AssetImage('assets/images/coverArt_1.png'),
+                        fit: BoxFit.cover,
+                      ),
+                      borderRadius: BorderRadius.circular(8),
                     ),
-                    borderRadius: BorderRadius.circular(8),
                   ),
-                ),
-                const SizedBox(width: 16),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Saturn Devouring His Son',
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: colorScheme.onSurface,
-                          fontWeight: FontWeight.bold,
+                  const SizedBox(width: 16),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Saturn Devouring His Son',
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: colorScheme.onSurface,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        'Jornada Del Muerto',
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: colorScheme.onSurfaceVariant,
+                        const SizedBox(height: 4),
+                        Text(
+                          'Jornada Del Muerto',
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: colorScheme.onSurfaceVariant,
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        'Dinlenme: 1.429',
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: colorScheme.onSurfaceVariant,
+                        const SizedBox(height: 4),
+                        Text(
+                          'Dinlenme: 1.429',
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: colorScheme.onSurfaceVariant,
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(width: 16),
-                SizedBox(
-                  width: 60,
-                  height: 60,
-                  child: IconButton(
-                    icon: const Icon(Icons.favorite),
-                    color: colorScheme.onSurface,
-                    onPressed: () {},
-                  ),
-                ),
-                SizedBox(
-                  width: 60,
-                  height: 60,
-                  child: IconButton(
-                    icon: const Icon(Icons.more_vert),
-                    color: colorScheme.onSurface,
-                    onPressed: () {},
-                  ),
-                )
-              ],
-            ),
-          ),
-          const Divider(),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                  width: 60,
-                  height: 60,
-                  decoration: BoxDecoration(
-                    image: const DecorationImage(
-                      image: AssetImage('assets/images/coverArt_2.png'),
-                      fit: BoxFit.cover,
+                      ],
                     ),
-                    borderRadius: BorderRadius.circular(8),
                   ),
-                ),
-                const SizedBox(width: 16),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Redlight Moments',
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: colorScheme.onSurface,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        'Bladee',
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: colorScheme.onSurfaceVariant,
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        'Dinlenme: 3.537.194',
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: colorScheme.onSurfaceVariant,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(width: 16),
-                SizedBox(
-                  width: 60,
-                  height: 60,
-                  child: IconButton(
-                    icon: const Icon(Icons.favorite),
-                    color: colorScheme.onSurface,
-                    onPressed: () {},
-                  ),
-                ),
-                SizedBox(
-                  width: 60,
-                  height: 60,
-                  child: IconButton(
-                    icon: const Icon(Icons.more_vert),
-                    color: colorScheme.onSurface,
-                    onPressed: () {},
-                  ),
-                )
-              ],
-            ),
-          ),
-          const Divider(),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                  width: 60,
-                  height: 60,
-                  decoration: BoxDecoration(
-                    image: const DecorationImage(
-                      image: AssetImage('assets/images/coverArt_3.png'),
-                      fit: BoxFit.cover,
+                  const SizedBox(width: 16),
+                  SizedBox(
+                    width: 60,
+                    height: 60,
+                    child: IconButton(
+                      icon: const Icon(Icons.favorite),
+                      color: colorScheme.onSurface,
+                      onPressed: () {},
                     ),
-                    borderRadius: BorderRadius.circular(8),
                   ),
-                ),
-                const SizedBox(width: 16),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Me Siento Ridículo',
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: colorScheme.onSurface,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        'Finale',
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: colorScheme.onSurfaceVariant,
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        'Dinlenme: 372.373',
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: colorScheme.onSurfaceVariant,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(width: 16),
-                SizedBox(
-                  width: 60,
-                  height: 60,
-                  child: IconButton(
-                    icon: const Icon(Icons.favorite),
-                    color: colorScheme.onSurface,
-                    onPressed: () {},
-                  ),
-                ),
-                SizedBox(
-                  width: 60,
-                  height: 60,
-                  child: IconButton(
-                    icon: const Icon(Icons.more_vert),
-                    color: colorScheme.onSurface,
-                    onPressed: () {},
-                  ),
-                )
-              ],
-            ),
-          ),
-          const Divider(),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                  width: 60,
-                  height: 60,
-                  decoration: BoxDecoration(
-                    image: const DecorationImage(
-                      image: AssetImage('assets/images/coverArt_4.png'),
-                      fit: BoxFit.cover,
+                  SizedBox(
+                    width: 60,
+                    height: 60,
+                    child: IconButton(
+                      icon: const Icon(Icons.more_vert),
+                      color: colorScheme.onSurface,
+                      onPressed: () {},
                     ),
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                ),
-                const SizedBox(width: 16),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Clifford the Big Red Stab Wound',
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: colorScheme.onSurface,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        'Your Arms Are My Cocoon',
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: colorScheme.onSurfaceVariant,
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        'Dinlenme: 550.425',
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: colorScheme.onSurfaceVariant,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(width: 16),
-                SizedBox(
-                  width: 60,
-                  height: 60,
-                  child: IconButton(
-                    icon: const Icon(Icons.favorite),
-                    color: colorScheme.onSurface,
-                    onPressed: () {},
-                  ),
-                ),
-                SizedBox(
-                  width: 60,
-                  height: 60,
-                  child: IconButton(
-                    icon: const Icon(Icons.more_vert),
-                    color: colorScheme.onSurface,
-                    onPressed: () {},
-                  ),
-                )
-              ],
+                  )
+                ],
+              ),
             ),
-          ),
-          const Divider(),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                  width: 60,
-                  height: 60,
-                  decoration: BoxDecoration(
-                    image: const DecorationImage(
-                      image: AssetImage('assets/images/coverArt_5.png'),
-                      fit: BoxFit.cover,
+            const Divider(),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    width: 60,
+                    height: 60,
+                    decoration: BoxDecoration(
+                      image: const DecorationImage(
+                        image: AssetImage('assets/images/coverArt_2.png'),
+                        fit: BoxFit.cover,
+                      ),
+                      borderRadius: BorderRadius.circular(8),
                     ),
-                    borderRadius: BorderRadius.circular(8),
                   ),
-                ),
-                const SizedBox(width: 16),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        '你就像太陽，永遠照耀著我。',
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: colorScheme.onSurface,
-                          fontWeight: FontWeight.bold,
+                  const SizedBox(width: 16),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Redlight Moments',
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: colorScheme.onSurface,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        'AkuraVortex',
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: colorScheme.onSurfaceVariant,
+                        const SizedBox(height: 4),
+                        Text(
+                          'Bladee',
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: colorScheme.onSurfaceVariant,
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        'Dinlenme: 38.656',
-                        style: TextStyle(
-                          fontSize: 12,
-                          color: colorScheme.onSurfaceVariant,
+                        const SizedBox(height: 4),
+                        Text(
+                          'Dinlenme: 3.537.194',
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: colorScheme.onSurfaceVariant,
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
-                ),
-                const SizedBox(width: 16),
-                SizedBox(
-                  width: 60,
-                  height: 60,
-                  child: IconButton(
-                    icon: const Icon(Icons.favorite),
-                    color: colorScheme.onSurface,
-                    onPressed: () {},
+                  const SizedBox(width: 16),
+                  SizedBox(
+                    width: 60,
+                    height: 60,
+                    child: IconButton(
+                      icon: const Icon(Icons.favorite),
+                      color: colorScheme.onSurface,
+                      onPressed: () {},
+                    ),
                   ),
-                ),
-                SizedBox(
-                  width: 60,
-                  height: 60,
-                  child: IconButton(
-                    icon: const Icon(Icons.more_vert),
-                    color: colorScheme.onSurface,
-                    onPressed: () {},
-                  ),
-                )
-              ],
+                  SizedBox(
+                    width: 60,
+                    height: 60,
+                    child: IconButton(
+                      icon: const Icon(Icons.more_vert),
+                      color: colorScheme.onSurface,
+                      onPressed: () {},
+                    ),
+                  )
+                ],
+              ),
             ),
-          ),
-          const Divider(),
-        ],
+            const Divider(),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    width: 60,
+                    height: 60,
+                    decoration: BoxDecoration(
+                      image: const DecorationImage(
+                        image: AssetImage('assets/images/coverArt_3.png'),
+                        fit: BoxFit.cover,
+                      ),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  ),
+                  const SizedBox(width: 16),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Me Siento Ridículo',
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: colorScheme.onSurface,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          'Finale',
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: colorScheme.onSurfaceVariant,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          'Dinlenme: 372.373',
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: colorScheme.onSurfaceVariant,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 16),
+                  SizedBox(
+                    width: 60,
+                    height: 60,
+                    child: IconButton(
+                      icon: const Icon(Icons.favorite),
+                      color: colorScheme.onSurface,
+                      onPressed: () {},
+                    ),
+                  ),
+                  SizedBox(
+                    width: 60,
+                    height: 60,
+                    child: IconButton(
+                      icon: const Icon(Icons.more_vert),
+                      color: colorScheme.onSurface,
+                      onPressed: () {},
+                    ),
+                  )
+                ],
+              ),
+            ),
+            const Divider(),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    width: 60,
+                    height: 60,
+                    decoration: BoxDecoration(
+                      image: const DecorationImage(
+                        image: AssetImage('assets/images/coverArt_4.png'),
+                        fit: BoxFit.cover,
+                      ),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  ),
+                  const SizedBox(width: 16),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Clifford the Big Red Stab Wound',
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: colorScheme.onSurface,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          'Your Arms Are My Cocoon',
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: colorScheme.onSurfaceVariant,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          'Dinlenme: 550.425',
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: colorScheme.onSurfaceVariant,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 16),
+                  SizedBox(
+                    width: 60,
+                    height: 60,
+                    child: IconButton(
+                      icon: const Icon(Icons.favorite),
+                      color: colorScheme.onSurface,
+                      onPressed: () {},
+                    ),
+                  ),
+                  SizedBox(
+                    width: 60,
+                    height: 60,
+                    child: IconButton(
+                      icon: const Icon(Icons.more_vert),
+                      color: colorScheme.onSurface,
+                      onPressed: () {},
+                    ),
+                  )
+                ],
+              ),
+            ),
+            const Divider(),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    width: 60,
+                    height: 60,
+                    decoration: BoxDecoration(
+                      image: const DecorationImage(
+                        image: AssetImage('assets/images/coverArt_5.png'),
+                        fit: BoxFit.cover,
+                      ),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  ),
+                  const SizedBox(width: 16),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          '你就像太陽，永遠照耀著我。',
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: colorScheme.onSurface,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          'AkuraVortex',
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: colorScheme.onSurfaceVariant,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          'Dinlenme: 38.656',
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: colorScheme.onSurfaceVariant,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 16),
+                  SizedBox(
+                    width: 60,
+                    height: 60,
+                    child: IconButton(
+                      icon: const Icon(Icons.favorite),
+                      color: colorScheme.onSurface,
+                      onPressed: () {},
+                    ),
+                  ),
+                  SizedBox(
+                    width: 60,
+                    height: 60,
+                    child: IconButton(
+                      icon: const Icon(Icons.more_vert),
+                      color: colorScheme.onSurface,
+                      onPressed: () {},
+                    ),
+                  )
+                ],
+              ),
+            ),
+            const Divider(),
+          ],
+        ),
       ),
       bottomNavigationBar: const BottomMenu(),
     );

@@ -92,7 +92,8 @@ class LibraryScreen extends StatelessWidget {
       context: context,
       isScrollControlled: true,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
+        borderRadius: BorderRadius.vertical(
+            top: Radius.circular(16), bottom: Radius.circular(16)),
       ),
       builder: (context) {
         return Padding(
@@ -126,7 +127,7 @@ class LibraryScreen extends StatelessWidget {
                   border: OutlineInputBorder(),
                 ),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 15),
               ElevatedButton(
                 onPressed: () => Navigator.pop(context),
                 style: ElevatedButton.styleFrom(
@@ -134,6 +135,7 @@ class LibraryScreen extends StatelessWidget {
                 ),
                 child: Text('Kaydet', style: TextStyle(color: Colors.white)),
               ),
+              SizedBox(height: 10),
             ],
           ),
         );
