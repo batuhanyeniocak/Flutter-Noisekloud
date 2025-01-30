@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/core/themes.dart';
 import 'package:flutter_app/widgets/bottom_menu.dart';
-import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
-import '../core/themes.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -34,10 +33,7 @@ class SettingsScreen extends StatelessWidget {
           children: [
             ListTile(
               contentPadding: EdgeInsets.zero,
-              leading: Icon(
-                Icons.palette,
-                color: colorScheme.primary,
-              ),
+              leading: Icon(Icons.palette, color: colorScheme.primary),
               title: Text(
                 'Tema Değiştir',
                 style: TextStyle(
@@ -48,6 +44,53 @@ class SettingsScreen extends StatelessWidget {
               onTap: () {
                 context.read<ThemeProvider>().toggleTheme();
               },
+            ),
+            const Divider(),
+            ListTile(
+              contentPadding: EdgeInsets.zero,
+              leading: Icon(Icons.notifications, color: colorScheme.primary),
+              title: Text(
+                'Bildirimleri Aç/Kapat',
+                style: TextStyle(
+                  color: colorScheme.onSurface,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              trailing: Switch(
+                value: false,
+                onChanged: (value) {},
+              ),
+              onTap: () {},
+            ),
+            const Divider(),
+            ListTile(
+              contentPadding: EdgeInsets.zero,
+              leading: Icon(Icons.language, color: colorScheme.primary),
+              title: Text(
+                'Dil Seçimi',
+                style: TextStyle(
+                  color: colorScheme.onSurface,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              subtitle: Text(
+                'Türkçe',
+                style: TextStyle(color: colorScheme.onSurfaceVariant),
+              ),
+              onTap: () {},
+            ),
+            const Divider(),
+            ListTile(
+              contentPadding: EdgeInsets.zero,
+              leading: Icon(Icons.info, color: colorScheme.primary),
+              title: Text(
+                'Hakkında',
+                style: TextStyle(
+                  color: colorScheme.onSurface,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              onTap: () {},
             ),
             const Divider(),
           ],
