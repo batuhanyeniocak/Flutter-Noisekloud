@@ -21,7 +21,7 @@ class ProfileScreen extends StatelessWidget {
         iconTheme: IconThemeData(
           color: colorScheme.primary,
         ),
-        backgroundColor: colorScheme.secondary,
+        backgroundColor: colorScheme.onSecondary,
       ),
       backgroundColor: colorScheme.surface,
       body: Column(
@@ -30,7 +30,7 @@ class ProfileScreen extends StatelessWidget {
           CircleAvatar(
             radius: 50,
             backgroundImage: const AssetImage('assets/images/logo.png'),
-            backgroundColor: colorScheme.onSurfaceVariant,
+            backgroundColor: colorScheme.onSecondary,
           ),
           const SizedBox(height: 10),
           Text(

@@ -78,7 +78,7 @@ class RegisterScreen extends StatelessWidget {
               child: Text(
                 'Zaten hesabın var mı? Giriş yap!',
                 style: TextStyle(
-                  color: colorScheme.onSecondary,
+                  color: colorScheme.secondary,
                   fontWeight: FontWeight.w600,
                 ),
               ),

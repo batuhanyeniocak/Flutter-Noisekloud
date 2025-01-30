@@ -64,7 +64,7 @@ class LoginScreen extends StatelessWidget {
               child: Text(
                 'Henüz hesabın yok mu? Kayıt Ol!',
                 style: TextStyle(
-                  color: colorScheme.onSecondary,
+                  color: colorScheme.secondary,
                   fontWeight: FontWeight.w600,
                 ),
               ),

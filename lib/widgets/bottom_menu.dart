@@ -9,9 +9,11 @@ class BottomMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final colorScheme = theme.colorScheme;
     return Container(
       height: 70,
-      color: const Color.fromARGB(255, 26, 26, 26),
+      color: colorScheme.onSecondary,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [

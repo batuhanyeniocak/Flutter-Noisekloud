@@ -12,7 +12,7 @@ class LibraryScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: colorScheme.surface,
       appBar: AppBar(
-        backgroundColor: colorScheme.secondary,
+        backgroundColor: colorScheme.onSecondary,
         iconTheme: IconThemeData(
           color: colorScheme.onPrimary,
         ),
