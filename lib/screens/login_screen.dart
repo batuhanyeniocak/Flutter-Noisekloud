@@ -18,7 +18,7 @@ class LoginScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Noisekloud - Login',
+              'Noisekloud - Giriş',
               style: TextStyle(
                 fontSize: 32,
                 color: colorScheme.primary,
@@ -33,7 +33,7 @@ class LoginScreen extends StatelessWidget {
                   border: const OutlineInputBorder(),
                   prefixIcon: const Icon(Icons.person),
                   labelStyle: TextStyle(color: colorScheme.primary),
-                  hintText: 'Username'),
+                  hintText: 'Kullanıcı Adı'),
             ),
             const SizedBox(height: 16),
             TextField(
@@ -44,7 +44,7 @@ class LoginScreen extends StatelessWidget {
                   border: const OutlineInputBorder(),
                   prefixIcon: const Icon(Icons.lock),
                   labelStyle: TextStyle(color: colorScheme.surface),
-                  hintText: 'Password'),
+                  hintText: 'Şifre'),
             ),
             const SizedBox(height: 32),
             ElevatedButton(
@@ -54,7 +54,7 @@ class LoginScreen extends StatelessWidget {
                     const EdgeInsets.symmetric(horizontal: 50, vertical: 15),
                 backgroundColor: colorScheme.secondary,
               ),
-              child: const Text('Login', style: TextStyle(fontSize: 18)),
+              child: const Text('Giriş Yap', style: TextStyle(fontSize: 18)),
             ),
             const SizedBox(height: 16),
             TextButton(
@@ -62,7 +62,7 @@ class LoginScreen extends StatelessWidget {
                 context.push("/register");
               },
               child: Text(
-                'Don\'t have an account? Register!',
+                'Henüz hesabın yok mu? Kayıt Ol!',
                 style: TextStyle(
                   color: colorScheme.onSecondary,
                   fontWeight: FontWeight.w600,

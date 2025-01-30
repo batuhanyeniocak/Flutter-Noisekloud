@@ -18,7 +18,7 @@ class RegisterScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Noisekloud - Register',
+              'Noisekloud - Kayıt Ol',
               style: TextStyle(
                 fontSize: 32,
                 color: colorScheme.primary,
@@ -33,7 +33,7 @@ class RegisterScreen extends StatelessWidget {
                 border: const OutlineInputBorder(),
                 prefixIcon: const Icon(Icons.person),
                 labelStyle: TextStyle(color: colorScheme.primary),
-                hintText: 'Username',
+                hintText: 'Kullanıcı Adı',
               ),
             ),
             const SizedBox(height: 16),
@@ -45,7 +45,7 @@ class RegisterScreen extends StatelessWidget {
                 border: const OutlineInputBorder(),
                 prefixIcon: const Icon(Icons.lock),
                 labelStyle: TextStyle(color: colorScheme.primary),
-                hintText: 'Password',
+                hintText: 'Şifre',
               ),
             ),
             const SizedBox(height: 16),
@@ -57,7 +57,7 @@ class RegisterScreen extends StatelessWidget {
                 border: const OutlineInputBorder(),
                 prefixIcon: const Icon(Icons.lock),
                 labelStyle: TextStyle(color: colorScheme.primary),
-                hintText: 'Confirm Password',
+                hintText: 'Şifreni Doğrula',
               ),
             ),
             const SizedBox(height: 32),
@@ -68,7 +68,7 @@ class RegisterScreen extends StatelessWidget {
                     const EdgeInsets.symmetric(horizontal: 50, vertical: 15),
                 backgroundColor: colorScheme.secondary,
               ),
-              child: const Text('Register', style: TextStyle(fontSize: 18)),
+              child: const Text('Kayıt Ol', style: TextStyle(fontSize: 18)),
             ),
             const SizedBox(height: 16),
             TextButton(
@@ -76,7 +76,7 @@ class RegisterScreen extends StatelessWidget {
                 context.push("/login");
               },
               child: Text(
-                'Already have an account? Login!',
+                'Zaten hesabın var mı? Giriş yap!',
                 style: TextStyle(
                   color: colorScheme.onSecondary,
                   fontWeight: FontWeight.w600,

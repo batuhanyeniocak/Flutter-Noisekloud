@@ -50,7 +50,6 @@ class SettingsScreen extends StatelessWidget {
               },
             ),
             const Divider(),
-            // Diğer ayar öğelerini buraya ekleyebilirsiniz.
           ],
         ),
       ),
