@@ -125,17 +125,27 @@ lib/
 
 ## Ekran Görüntüleri
 
-# Light Tema
+### Light Tema
 
-<img src="https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/lightTheme/homeScreen_SS.png?raw=true" width=50% height=50%>
-![searchLight](https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets\images\screenshots\lightTheme\searchScreen_SS.png?raw=true)
-![libraryLight](https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets\images\screenshots\lightTheme\libraryScreen_SS.png?raw=true)
-![notificationLight](https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets\images\screenshots\lightTheme\notificationScreen_SS.png?raw=true)
-![loginLight](https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets\images\screenshots\lightTheme\loginScreen_SS.png?raw=true)
-![registerLight](https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets\images\screenshots\lightTheme\registerScreen_SS.png?raw=true)
-![settingsLight](https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets\images\screenshots\lightTheme\settingsScreen_SS.png?raw=true)
-![profileLight](https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets\images\screenshots\lightTheme\profileScreen_SS.png?raw=true)
+<img src="https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/lightTheme/homeScreen_SS.png?raw=true" width=30% height=30%>
+<img src="https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/lightTheme/searchScreen_SS.png?raw=true" width=30% height=30%>
+<img src="https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/lightTheme/libraryScreen_SS.png?raw=true" width=30% height=30%>
+<img src="https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/lightTheme/notificationScreen_SS.png?raw=true" width=30% height=30%>
+<img src="https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/lightTheme/loginScreen_SS.png?raw=true" width=30% height=30%>
+<img src="https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/lightTheme/registerScreen_SS.png?raw=true" width=30% height=30%>
+<img src="https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/lightTheme/settingsScreen_SS.png?raw=true" width=30% height=30%>
+<img src="https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/lightTheme/profileScreen_SS.png?raw=true" width=30% height=30%>
 
+### Dark Tema
+
+<img src="https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/darkTheme/homeScreen_SS.png?raw=true" width=30% height=30%>
+<img src="https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/darkTheme/searchScreen_SS.png?raw=true" width=30% height=30%>
+<img src="https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/darkTheme/libraryScreen_SS.png?raw=true" width=30% height=30%>
+<img src="https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/darkTheme/notificationScreen_SS.png?raw=true" width=30% height=30%>
+<img src="https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/darkTheme/loginScreen_SS.png?raw=true" width=30% height=30%>
+<img src="https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/darkTheme/registerScreen_SS.png?raw=true" width=30% height=30%>
+<img src="https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/darkTheme/settingsScreen_SS.png?raw=true" width=30% height=30%>
+<img src="https://github.com/batuhanyeniocak/Flutter-Noisekloud/blob/main/assets/images/screenshots/darkTheme/profileScreen_SS.png?raw=true" width=30% height=30%>
 
   
 
