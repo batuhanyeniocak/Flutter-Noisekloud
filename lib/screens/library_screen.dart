@@ -17,7 +17,7 @@ class LibraryScreen extends StatelessWidget {
           color: colorScheme.onPrimary,
         ),
         title: Text(
-          'Müzik Kütüphanesi',
+          'Kütüphane',
           style: TextStyle(
             color: colorScheme.primary,
             fontWeight: FontWeight.bold,

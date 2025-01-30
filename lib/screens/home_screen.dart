@@ -102,6 +102,15 @@ class HomeScreen extends StatelessWidget {
                   width: 60,
                   height: 60,
                   child: IconButton(
+                    icon: const Icon(Icons.favorite),
+                    color: colorScheme.onSurface,
+                    onPressed: () {},
+                  ),
+                ),
+                SizedBox(
+                  width: 60,
+                  height: 60,
+                  child: IconButton(
                     icon: const Icon(Icons.more_vert),
                     color: colorScheme.onSurface,
                     onPressed: () {},
@@ -160,6 +169,15 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(width: 16),
+                SizedBox(
+                  width: 60,
+                  height: 60,
+                  child: IconButton(
+                    icon: const Icon(Icons.favorite),
+                    color: colorScheme.onSurface,
+                    onPressed: () {},
+                  ),
+                ),
                 SizedBox(
                   width: 60,
                   height: 60,
@@ -226,6 +244,15 @@ class HomeScreen extends StatelessWidget {
                   width: 60,
                   height: 60,
                   child: IconButton(
+                    icon: const Icon(Icons.favorite),
+                    color: colorScheme.onSurface,
+                    onPressed: () {},
+                  ),
+                ),
+                SizedBox(
+                  width: 60,
+                  height: 60,
+                  child: IconButton(
                     icon: const Icon(Icons.more_vert),
                     color: colorScheme.onSurface,
                     onPressed: () {},
@@ -288,6 +315,15 @@ class HomeScreen extends StatelessWidget {
                   width: 60,
                   height: 60,
                   child: IconButton(
+                    icon: const Icon(Icons.favorite),
+                    color: colorScheme.onSurface,
+                    onPressed: () {},
+                  ),
+                ),
+                SizedBox(
+                  width: 60,
+                  height: 60,
+                  child: IconButton(
                     icon: const Icon(Icons.more_vert),
                     color: colorScheme.onSurface,
                     onPressed: () {},
@@ -346,6 +382,15 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(width: 16),
+                SizedBox(
+                  width: 60,
+                  height: 60,
+                  child: IconButton(
+                    icon: const Icon(Icons.favorite),
+                    color: colorScheme.onSurface,
+                    onPressed: () {},
+                  ),
+                ),
                 SizedBox(
                   width: 60,
                   height: 60,
